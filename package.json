@@ -10,5 +10,11 @@
   },
   "devDependencies": {
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.6",
+    "scrollreveal": "^4.0.9"
   }
 }

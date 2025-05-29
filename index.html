@@ -1,13 +1,150 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Mr.Bite - Seu Assistente Virtual de Pedidos</title>
+    <meta name="description" content="Mr.Bite - O jeito mais fácil de pedir comida pelo WhatsApp usando IA" />
+    
+    <!-- Meta tags para compartilhamento social -->
+    <meta property="og:title" content="Mr.Bite - Seu Assistente Virtual de Pedidos" />
+    <meta property="og:description" content="Peça comida pelo WhatsApp de forma fácil com IA! Mande foto, áudio ou texto." />
+    <meta property="og:image" content="/mrbite-logo.png" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Meta tags específicas para WhatsApp -->
+    <meta property="og:site_name" content="Mr.Bite" />
+    <meta property="og:locale" content="pt_BR" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/mrbite-logo.png" alt="Mr.Bite Logo" height="40">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#como-funciona">Como Funciona</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recursos">Recursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comece">Começar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+              <h1>Peça comida do seu jeito, <br><span class="highlight">sem complicação</span> 🍔</h1>
+              <p class="lead">Manda foto, áudio ou texto. A gente entende e faz o pedido pra você. Simples assim!</p>
+              <a href="#comece" class="btn btn-primary btn-lg">Começar no WhatsApp</a>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <img src="/hero-image.png" alt="Mr.Bite App Demo" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Como Funciona Section -->
+      <section id="como-funciona" class="features-section">
+        <div class="container">
+          <h2 class="text-center mb-5" data-aos="fade-up">Como Funciona? É super fácil! 🚀</h2>
+          <div class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-card">
+                <i class="fas fa-comment-dots"></i>
+                <h3>Manda sua ideia</h3>
+                <p>Foto, áudio ou texto - escolhe o jeito que você preferir pra fazer seu pedido</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h3>A IA entende</h3>
+                <p>Nossa IA analisa seu pedido e encontra as melhores opções pra você</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Pronto!</h3>
+                <p>A gente cuida de tudo e você só espera chegar 😋</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recursos Section -->
+      <section id="recursos" class="benefits-section">
+        <div class="container">
+          <h2 class="text-center mb-5" data-aos="fade-up">Recursos Incríveis 🌟</h2>
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right">
+              <div class="benefit-item">
+                <i class="fas fa-brain"></i>
+                <h3>IA Que Te Entende</h3>
+                <p>Nossa IA aprende seus gostos e faz recomendações cada vez melhores</p>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-history"></i>
+                <h3>Histórico Inteligente</h3>
+                <p>Guarda seus pedidos favoritos e sugere baseado no seu histórico</p>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="benefit-item">
+                <i class="fas fa-utensils"></i>
+                <h3>Várias Opções</h3>
+                <p>Restaurantes, mercados e muito mais, tudo em um só lugar</p>
+              </div>
+              <div class="benefit-item">
+                <i class="fas fa-heart"></i>
+                <h3>Dieta Personalizada</h3>
+                <p>Respeita suas preferências alimentares e objetivos de dieta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section id="comece" class="cta-section">
+        <div class="container text-center">
+          <h2 data-aos="fade-up">Pronto pra começar? 🎉</h2>
+          <p class="lead" data-aos="fade-up" data-aos-delay="100">Sem apps pra baixar, sem cadastros chatos.<br>É só mandar um oi no WhatsApp!</p>
+          <a href="https://wa.me/seu-numero" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="200">
+            <i class="fab fa-whatsapp"></i> Começar no WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container text-center">
+          <p>&copy; 2025 Mr.Bite - Seu assistente de pedidos inteligente 🤖</p>
+        </div>
+      </footer>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
